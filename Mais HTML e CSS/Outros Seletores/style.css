@@ -1,0 +1,36 @@
+[required] {
+  border: 2px solid tomato;
+}
+
+a[href="#contato"] {
+  border: 2px solid greenyellow;
+}
+
+[href^="#"] {
+  background: tomato;
+}
+
+[href$=".com"] {
+  background: forestgreen;
+}
+
+section > h2 {
+  color: tomato;
+}
+
+p {
+  margin: 0;
+}
+
+article {
+  background: lightgreen;
+  padding: 10px;
+}
+
+p + p {
+  margin-top: 20px;
+}
+
+* {
+  border: 1px solid red;
+}

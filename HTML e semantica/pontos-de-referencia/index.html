@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pontos de Referência</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <nav> Navegação:
+      A tag <nav> marca um bloco de navegação.
+
+      Exemplos:
+        Geralmente utilizando para a navegação primária e secundário do site.
+      
+      Observação:
+        Evite o uso de diversas tags nav, use apenas para a navegação essencial.
+      
+      aria-label: da uma ediqueta para identificar os navegações do site.
+    -->
+    <nav aria-label="primária">
+      <a href="#">Sobre</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <!-- <main> Conteudo Principal:
+      A tag <main> marca o contéudo principal da página.
+      
+      Exemplos:
+        Blog: contéudo do artigo. Comércio eletrônico: descrição/imagem/preço do produto.
+
+      Observação:
+          Utilize uma por página.
+     -->
+    <main>
+      <h1>Bicicletas Bikcraft</h1>
+      <p>Teste</p>
+    </main>
+
+    <!-- Defini uma região do site -->
+    <!-- <article>
+      A tag article representa uma região do site que é autoexplicativa (não precisa do restante do site para fazer sentido). Geralmente deve conter um título (h's).
+
+      Exemplos:
+        Lista de produtos do site, um artigo, post na rede social e outros.
+
+      aria-label:
+        Título da região visualmente escondido, mas lido pelo leitor de tela.
+
+      aria-labelledby:
+        caso o título exista na tela, marque o mesmo com id e use este atributo para criar uma relação entre eles.
+
+      Observação:
+        Oficialmente não cria uma landmark, mas muitos leitores de tela utilizam ela como referência para marcar regiões 
+        do site. A tag é até mais consistente do que a section para marcar regiões do site.
+     -->
+    <article aria-labelledby="sobrebik">
+      <h2 id="sobrebik">Sobre a Bikcraft</h2>
+      <p>A empresa foi fundada em 2014.</p>
+    </article>
+    <!-- <section> 
+      A tag section pode ser utilizada para agrupar o conteúdo do site em diferentes regiiões. Geralmente o coteúdo necessita do seu contexto para ser compreendido.
+
+      aria-label: 
+        Se utilizada com a atributo aria-label criar uma região do site.
+      
+      Observação:
+        O h1 é impactado em termos visuais quando utilizado na section. O section foi criado para melhor lidar com os
+        headings, porém a sua idealização nunca foi implementada (até hoje 2021):
+    -->
+    <section aria-label="Sobre a Surfbot">
+      <h2>Sobre a Surfbot</h2>
+      <p>A empresa foi fundada em 2014.</p>
+    </section>
+    <!-- Defini uma região do site de conteudo extra -->
+    <!-- <aside>
+      A tag asite é utilizada para marcar conteúdo complementar ao site.
+      
+      Exemplos:
+        Lista de post mais visitados, informações extras como descrição de termo usado no artigo e mais.
+    -->
+    <aside>
+      <h3>Posts Relacionados</h3>
+      <a href="#">Como aprender CSS</a>
+      <a href="#">Como aprender HTML</a>
+    </aside>
+    <!-- Cabeçalho -->
+    <!-- <header> 
+      A tag hearder marca o cabeçalho do site (banner), onde geralmente estão presentes a marca, navegação do site
+      e as vezes uma informação introdutória.
+      
+      Exemplos:
+        Pode também ser utilizada para marcar o cabeçalho de regiões como título de um artigo, data, autor e outras informações.
+    -->
+    <header>
+      <!-- <img src="" alt="">  LOGO-->
+      <nav aria-label="primária">
+        <a href="#">Sobre</a>
+        <a href="#">Produtos</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
+    <!-- Rodapé -->
+    <footer>
+      <p>Alguns direitos reservados.</p>
+    </footer>
+  </body>
+</html>

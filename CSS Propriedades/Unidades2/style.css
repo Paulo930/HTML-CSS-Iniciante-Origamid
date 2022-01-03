@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+section {
+  background: tomato;
+}
+
+div {
+  background: lightblue;
+  width: calc(100vw - 100px);
+  height: 100vh;
+  /* height: 100vh; */
+}

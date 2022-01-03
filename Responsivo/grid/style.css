@@ -1,0 +1,29 @@
+img {
+  display: block;
+  max-width: 100%;
+}
+
+div {
+  display: grid;
+  /* 
+    repeat(auto-fit)
+        O repeat com auto-fit irá gerar o total de colunas que 
+      forem necessárias para preencher a área. 
+  */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+.galeria {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+p {
+  font-size: 2rem;
+}
+
+@media (min-width: 400px) {
+  .minmax img {
+    order: 2;
+  }
+}
